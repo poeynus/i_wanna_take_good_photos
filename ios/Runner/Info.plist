@@ -26,6 +26,12 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>카메라 미리보기를 표시하고 사진을 촬영하는 데 사용합니다.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>촬영한 사진을 기기의 사진 라이브러리에 저장합니다.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>함께 촬영을 위해 가까운 기기를 찾고 연결합니다.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

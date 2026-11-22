@@ -1,0 +1,8 @@
+{
+  "CAM_APP_ENV": "development",
+  "CAM_API_BASE_URL": "http://10.0.2.2:58080",
+  "CAM_CONNECT_TIMEOUT_MS": 5000,
+  "CAM_ENABLE_PRESET_SHARING": true,
+  "CAM_ENABLE_SHARING": true,
+  "CAM_ENABLE_BLE": true
+}

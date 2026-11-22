@@ -1,0 +1,23 @@
+name: camera-app
+services:
+  api:
+    build: .
+    env_file: .env
+    ports:
+      - "127.0.0.1:${CAM_API_PORT:-8080}:8080"
+    cpus: ${CAM_API_CPU_LIMIT:-1.0}
+    mem_limit: ${CAM_API_MEMORY_LIMIT:-256m}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    read_only: true
+    tmpfs:
+      - /tmp
+    restart: unless-stopped
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

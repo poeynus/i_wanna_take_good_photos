@@ -43,6 +43,17 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/.kotlin/
 
 # Widget Preview related
 .widget_preview/
+
+# 내꺼임
+docs/
+
+# Local service configuration
+.venv/
+.env
+.env.*
+!.env.example
+/config/*.local.json
